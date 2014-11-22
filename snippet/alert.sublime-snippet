@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+(function(){
+	var oldAlert= window.alert,
+	count = 0;
+	window.alert=function(a){
+count++;
+oldAlert(a+"\n you've called alert "+count +"yanhechao");
+	};
+})();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>alert</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.js</scope>
+	<!-- <description>description</description> -->
+</snippet>
